@@ -1,0 +1,224 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4A4D2DB-BA16-45D1-816C-7D77D970FA65}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PortfolioReact</RootNamespace>
+    <AssemblyName>PortfolioReact</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="reactCore\.eslintrc.js" />
+    <Content Include="reactCore\app\app.js" />
+    <Content Include="reactCore\app\configureStore.js" />
+    <Content Include="reactCore\app\containers\App\constants.js" />
+    <Content Include="reactCore\app\containers\App\index.js" />
+    <Content Include="reactCore\app\containers\App\selectors.js" />
+    <Content Include="reactCore\app\containers\App\tests\index.test.js" />
+    <Content Include="reactCore\app\containers\App\tests\selectors.test.js" />
+    <Content Include="reactCore\app\containers\HomePage\Enigma\Form.js" />
+    <Content Include="reactCore\app\containers\HomePage\index.js" />
+    <Content Include="reactCore\app\containers\HomePage\Loadable.js" />
+    <Content Include="reactCore\app\containers\HomePage\tests\index.test.js" />
+    <Content Include="reactCore\app\i18n.js" />
+    <Content Include="reactCore\app\images\favicon.ico" />
+    <Content Include="reactCore\app\images\icon-512x512.png" />
+    <Content Include="reactCore\app\index.html" />
+    <Content Include="reactCore\app\reducers.js" />
+    <Content Include="reactCore\app\tests\i18n.test.js" />
+    <Content Include="reactCore\app\tests\store.test.js" />
+    <Content Include="reactCore\app\utils\checkStore.js" />
+    <Content Include="reactCore\app\utils\constants.js" />
+    <Content Include="reactCore\app\utils\history.js" />
+    <Content Include="reactCore\app\utils\injectReducer.js" />
+    <Content Include="reactCore\app\utils\injectSaga.js" />
+    <Content Include="reactCore\app\utils\loadable.js" />
+    <Content Include="reactCore\app\utils\reducerInjectors.js" />
+    <Content Include="reactCore\app\utils\sagaInjectors.js" />
+    <Content Include="reactCore\app\utils\tests\checkStore.test.js" />
+    <Content Include="reactCore\app\utils\tests\injectReducer.test.js" />
+    <Content Include="reactCore\app\utils\tests\injectSaga.test.js" />
+    <Content Include="reactCore\app\utils\tests\reducerInjectors.test.js" />
+    <Content Include="reactCore\app\utils\tests\sagaInjectors.test.js" />
+    <Content Include="reactCore\babel.config.js" />
+    <Content Include="reactCore\internals\generators\component\index.js" />
+    <Content Include="reactCore\internals\generators\container\index.js" />
+    <Content Include="reactCore\internals\generators\index.js" />
+    <Content Include="reactCore\internals\generators\language\index.js" />
+    <Content Include="reactCore\internals\generators\utils\componentExists.js" />
+    <Content Include="reactCore\internals\mocks\cssModule.js" />
+    <Content Include="reactCore\internals\mocks\image.js" />
+    <Content Include="reactCore\internals\scripts\analyze.js" />
+    <Content Include="reactCore\internals\scripts\clean.js" />
+    <Content Include="reactCore\internals\scripts\extract-intl.js" />
+    <Content Include="reactCore\internals\scripts\generate-templates-for-linting.js" />
+    <Content Include="reactCore\internals\scripts\helpers\checkmark.js" />
+    <Content Include="reactCore\internals\scripts\helpers\get-npm-config.js" />
+    <Content Include="reactCore\internals\scripts\helpers\progress.js" />
+    <Content Include="reactCore\internals\scripts\helpers\xmark.js" />
+    <Content Include="reactCore\internals\scripts\npmcheckversion.js" />
+    <Content Include="reactCore\internals\testing\test-bundler.js" />
+    <Content Include="reactCore\internals\webpack\webpack.base.babel.js" />
+    <Content Include="reactCore\internals\webpack\webpack.dev.babel.js" />
+    <Content Include="reactCore\internals\webpack\webpack.prod.babel.js" />
+    <Content Include="reactCore\jest.config.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="reactCore\app\.htaccess" />
+    <Content Include="reactCore\app\.nginx.conf" />
+    <Content Include="reactCore\app\containers\App\tests\__snapshots__\index.test.js.snap" />
+    <Content Include="reactCore\app\containers\HomePage\tests\__snapshots__\index.test.js.snap" />
+    <Content Include="reactCore\app\translations\en.json" />
+    <Content Include="reactCore\.all-contributorsrc" />
+    <Content Include="reactCore\.editorconfig" />
+    <Content Include="reactCore\.gitattributes" />
+    <Content Include="reactCore\.gitignore" />
+    <Content Include="reactCore\.nvmrc" />
+    <Content Include="reactCore\.prettierignore" />
+    <Content Include="reactCore\.prettierrc" />
+    <Content Include="reactCore\.stylelintrc" />
+    <Content Include="reactCore\.travis.yml" />
+    <Content Include="reactCore\appveyor.yml" />
+    <Content Include="reactCore\LICENSE.md" />
+    <Content Include="reactCore\package-lock.json" />
+    <Content Include="reactCore\package.json" />
+    <Content Include="reactCore\README.md" />
+    <Content Include="reactCore\internals\generators\component\index.js.hbs" />
+    <Content Include="reactCore\internals\generators\component\loadable.js.hbs" />
+    <Content Include="reactCore\internals\generators\component\messages.js.hbs" />
+    <Content Include="reactCore\internals\generators\component\test.js.hbs" />
+    <Content Include="reactCore\internals\generators\container\actions.js.hbs" />
+    <Content Include="reactCore\internals\generators\container\actions.test.js.hbs" />
+    <Content Include="reactCore\internals\generators\container\constants.js.hbs" />
+    <Content Include="reactCore\internals\generators\container\index.js.hbs" />
+    <Content Include="reactCore\internals\generators\container\messages.js.hbs" />
+    <Content Include="reactCore\internals\generators\container\reducer.js.hbs" />
+    <Content Include="reactCore\internals\generators\container\reducer.test.js.hbs" />
+    <Content Include="reactCore\internals\generators\container\saga.js.hbs" />
+    <Content Include="reactCore\internals\generators\container\saga.test.js.hbs" />
+    <Content Include="reactCore\internals\generators\container\selectors.js.hbs" />
+    <Content Include="reactCore\internals\generators\container\selectors.test.js.hbs" />
+    <Content Include="reactCore\internals\generators\container\test.js.hbs" />
+    <Content Include="reactCore\internals\generators\language\add-locale-data.hbs" />
+    <Content Include="reactCore\internals\generators\language\app-locale.hbs" />
+    <Content Include="reactCore\internals\generators\language\format-translation-messages.hbs" />
+    <Content Include="reactCore\internals\generators\language\intl-locale-data.hbs" />
+    <Content Include="reactCore\internals\generators\language\polyfill-intl-locale.hbs" />
+    <Content Include="reactCore\internals\generators\language\translation-messages.hbs" />
+    <Content Include="reactCore\internals\generators\language\translations-json.hbs" />
+    <Content Include="reactCore\app\containers\App\Styles\app.less" />
+    <Content Include="reactCore\app\containers\HomePage\Styles\home.less" />
+    <Content Include="reactCore\app\containers\HomePage\Enigma\Styles\Enigma.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="reactCore\app\components\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50842</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50842/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
