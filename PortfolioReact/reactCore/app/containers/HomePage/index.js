@@ -6,11 +6,27 @@
  */
 import React from 'react';
 import EnigmaForm from './Enigma/Form';
+import Scoreboard from './Scoreboard/Scoreboard';
 import styles from './Styles/home.less';
 
-export default function HomePage() {
-  return (
-    <div className={styles.homepage}>
+class HomePage extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { showEnd: false };
+
+    let that = this;
+
+    this.onFormComplete = function () {
+    
+      that.setState({ showEnd: true });
+    };
+  }
+
+
+
+  render() {
+    return (<div className={styles.homepage}>
 
       <h1>Enigma Cipher</h1>
       <div id="instructions">
@@ -20,8 +36,12 @@ export default function HomePage() {
         <p>When a letter was typed on the enigma machine, the signal would pass through each of the 3 rotors. Each time the signal passed through a rotor, the letter changes using a simple substitution. After the signal passes through each rotor, the signal is fed through a circuit called the reflector. The reflector would simply feed the signal back through the rotors again. Once the circuit completes, the letter typed has gone through 7 tranformations.
         If that wasn&apos;t enough, the rotors change after each completed circuit. The rotor on the right would spin to the next letter until it completes its revolution and then triggers the middle rotor to do the same. Because of this, typing the same letter multiple times would yield in 3 seperate output values. It was this evolution in cipher encryption technology that made cracking the enigma so difficult.</p>
       </div>
+      <EnigmaForm onComplete={this.onFormComplete} />
+      <Scoreboard display={this.state.showEnd} />
 
-      <EnigmaForm />
     </div>
-  );
+    )
+  }
 }
+export default HomePage;
+

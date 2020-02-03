@@ -13,12 +13,12 @@ class Form extends React.Component {
     this.handleStep0 = this.handleStep0.bind(this);
     this.handleQuizStep = this.handleQuizStep.bind(this);
     this.handleTextInput = this.handleTextInput.bind(this);
+
+    this.onFormComplete = props.onComplete;
+    
   }
 
   handleStep0() {
-
-
-
     document.getElementById("instructions").style.display = "none";
     document.getElementById("enigmaChart").style.display = "flex";
 
@@ -29,9 +29,8 @@ class Form extends React.Component {
       })
   }
 
-
   handleQuizStep() {
-
+  
     const answer = this.state.currentAnswer;
     const that = this;
     axios.post("https://wandrsapp.com/puzzle",
@@ -58,6 +57,8 @@ class Form extends React.Component {
 
             } else {
               this.setState({ round: 5 });
+              document.getElementById("enigmaChart").style.display = "none";
+              this.onFormComplete();
             }
           }
         }
