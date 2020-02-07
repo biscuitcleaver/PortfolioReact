@@ -28,9 +28,6 @@ import 'file-loader?name=.htaccess!./.htaccess';
 
 import configureStore from './configureStore';
 
-// Import i18n messages
-import { translationMessages } from './i18n';
-
 // Create redux store with history
 const initialState = {};
 const store = configureStore(initialState, history);
@@ -53,7 +50,7 @@ if (module.hot) {
   // Hot reloadable React components and translation json files
   // modules.hot.accept does not accept dynamic dependencies,
   // have to be constants at compile-time
-  module.hot.accept(['./i18n', 'containers/App'], () => {
+  module.hot.accept(['containers/App'], () => {
     ReactDOM.unmountComponentAtNode(MOUNT_NODE);
     render(translationMessages);
   });

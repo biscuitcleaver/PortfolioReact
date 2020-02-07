@@ -79,14 +79,10 @@
     <Content Include="reactCore\app\containers\HomePage\index.js" />
     <Content Include="reactCore\app\containers\HomePage\Loadable.js" />
     <Content Include="reactCore\app\containers\HomePage\Scoreboard\Scoreboard.js" />
-    <Content Include="reactCore\app\containers\HomePage\tests\index.test.js" />
-    <Content Include="reactCore\app\i18n.js" />
     <Content Include="reactCore\app\images\favicon.ico" />
     <Content Include="reactCore\app\images\icon-512x512.png" />
     <Content Include="reactCore\app\index.html" />
     <Content Include="reactCore\app\reducers.js" />
-    <Content Include="reactCore\app\tests\i18n.test.js" />
-    <Content Include="reactCore\app\tests\store.test.js" />
     <Content Include="reactCore\app\utils\checkStore.js" />
     <Content Include="reactCore\app\utils\constants.js" />
     <Content Include="reactCore\app\utils\history.js" />
@@ -101,26 +97,6 @@
     <Content Include="reactCore\app\utils\tests\reducerInjectors.test.js" />
     <Content Include="reactCore\app\utils\tests\sagaInjectors.test.js" />
     <Content Include="reactCore\babel.config.js" />
-    <Content Include="reactCore\internals\generators\component\index.js" />
-    <Content Include="reactCore\internals\generators\container\index.js" />
-    <Content Include="reactCore\internals\generators\index.js" />
-    <Content Include="reactCore\internals\generators\language\index.js" />
-    <Content Include="reactCore\internals\generators\utils\componentExists.js" />
-    <Content Include="reactCore\internals\mocks\cssModule.js" />
-    <Content Include="reactCore\internals\mocks\image.js" />
-    <Content Include="reactCore\internals\scripts\analyze.js" />
-    <Content Include="reactCore\internals\scripts\clean.js" />
-    <Content Include="reactCore\internals\scripts\extract-intl.js" />
-    <Content Include="reactCore\internals\scripts\generate-templates-for-linting.js" />
-    <Content Include="reactCore\internals\scripts\helpers\checkmark.js" />
-    <Content Include="reactCore\internals\scripts\helpers\get-npm-config.js" />
-    <Content Include="reactCore\internals\scripts\helpers\progress.js" />
-    <Content Include="reactCore\internals\scripts\helpers\xmark.js" />
-    <Content Include="reactCore\internals\scripts\npmcheckversion.js" />
-    <Content Include="reactCore\internals\testing\test-bundler.js" />
-    <Content Include="reactCore\internals\webpack\webpack.base.babel.js" />
-    <Content Include="reactCore\internals\webpack\webpack.dev.babel.js" />
-    <Content Include="reactCore\internals\webpack\webpack.prod.babel.js" />
     <Content Include="reactCore\jest.config.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -129,10 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="reactCore\app\.htaccess" />
-    <Content Include="reactCore\app\.nginx.conf" />
     <Content Include="reactCore\app\containers\App\tests\__snapshots__\index.test.js.snap" />
-    <Content Include="reactCore\app\containers\HomePage\tests\__snapshots__\index.test.js.snap" />
     <Content Include="reactCore\app\translations\en.json" />
     <Content Include="reactCore\.all-contributorsrc" />
     <Content Include="reactCore\.editorconfig" />
@@ -148,33 +121,11 @@
     <Content Include="reactCore\package-lock.json" />
     <Content Include="reactCore\package.json" />
     <Content Include="reactCore\README.md" />
-    <Content Include="reactCore\internals\generators\component\index.js.hbs" />
-    <Content Include="reactCore\internals\generators\component\loadable.js.hbs" />
-    <Content Include="reactCore\internals\generators\component\messages.js.hbs" />
-    <Content Include="reactCore\internals\generators\component\test.js.hbs" />
-    <Content Include="reactCore\internals\generators\container\actions.js.hbs" />
-    <Content Include="reactCore\internals\generators\container\actions.test.js.hbs" />
-    <Content Include="reactCore\internals\generators\container\constants.js.hbs" />
-    <Content Include="reactCore\internals\generators\container\index.js.hbs" />
-    <Content Include="reactCore\internals\generators\container\messages.js.hbs" />
-    <Content Include="reactCore\internals\generators\container\reducer.js.hbs" />
-    <Content Include="reactCore\internals\generators\container\reducer.test.js.hbs" />
-    <Content Include="reactCore\internals\generators\container\saga.js.hbs" />
-    <Content Include="reactCore\internals\generators\container\saga.test.js.hbs" />
-    <Content Include="reactCore\internals\generators\container\selectors.js.hbs" />
-    <Content Include="reactCore\internals\generators\container\selectors.test.js.hbs" />
-    <Content Include="reactCore\internals\generators\container\test.js.hbs" />
-    <Content Include="reactCore\internals\generators\language\add-locale-data.hbs" />
-    <Content Include="reactCore\internals\generators\language\app-locale.hbs" />
-    <Content Include="reactCore\internals\generators\language\format-translation-messages.hbs" />
-    <Content Include="reactCore\internals\generators\language\intl-locale-data.hbs" />
-    <Content Include="reactCore\internals\generators\language\polyfill-intl-locale.hbs" />
-    <Content Include="reactCore\internals\generators\language\translation-messages.hbs" />
-    <Content Include="reactCore\internals\generators\language\translations-json.hbs" />
     <Content Include="reactCore\app\containers\App\Styles\app.less" />
     <Content Include="reactCore\app\containers\HomePage\Styles\home.less" />
     <Content Include="reactCore\app\containers\HomePage\Enigma\Styles\Enigma.less" />
     <Content Include="reactCore\app\containers\HomePage\Scoreboard\Styles\Scoreboard.less" />
+    <Content Include="reactCore\app\.htaccess" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
